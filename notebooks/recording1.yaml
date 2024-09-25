@@ -1,0 +1,15 @@
+metadata:
+  date: '2024-12-24'
+  height: 1080
+  order: RGB
+  researchers:
+  - Itchy
+  - Bart
+  - Lisa
+  subject:
+    id: x134
+    name: Scratchy
+    sources:
+    - Cartoon
+    - The Simpsons Lab, Springfield
+  width: 1920

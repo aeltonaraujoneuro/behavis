@@ -1,0 +1,21 @@
+{
+   "metadata": {
+      "height": 1080,
+      "width": 1920,
+      "order": "RGB",
+      "date": "2024-12-24",
+      "subject": {
+         "id": "x134",
+         "name": "Scratchy",
+         "sources": [
+            "Cartoon",
+            "The Simpsons Lab, Springfield"
+         ]
+      },
+      "researchers": [
+         "Itchy",
+         "Bart",
+         "Lisa"
+      ]
+   }
+}
