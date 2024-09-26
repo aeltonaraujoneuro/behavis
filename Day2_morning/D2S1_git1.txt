@@ -1,0 +1,64 @@
+
+# I. Git basic workflow
+
+mkdir MyRepo
+cd MyRepo
+ls         # of course empty
+git init
+ls         # still empty?
+ls -a
+ls .git/
+git status
+
+echo "# My ANDA-NI repo" > README.md
+ls              # now we have one file in the repo
+cat README.md   # check what's in it
+git status
+git add README.md
+git status
+git commit -m "Add README"
+git status
+
+# show commit history
+git log   # note each commit is identified by a checksum
+
+echo "Some inf" >> README.md
+git status
+# what has changed?
+git diff
+git add README.md
+git commit -m "Add some info"
+# oops, typo!
+# Go back in time (sort of):
+# revert last commit (creating another commit)
+git revert HEAD   # HEAD is equivalent to the last commit
+git log   # additional commit
+
+echo "Some info" > README.md
+# oops, truncated README!
+# to revert changes before comitting:
+git reset --hard HEAD   # Restore all files as in the last commit
+echo "Some info" >> README.md
+git add README.md
+
+
+
+# to temorarily go to a previous commit:
+git checkout <commit>
+# to switch back:
+git switch -
+
+
+# to just see what has changed with a commit:
+git show <commit>
+
+git rm <filename>   # to remove a tracked file - needs commit
+gir mv <oldname> <newname>   # to rename a tracked file - needs commit
+
+
+# Exercise:
+# Copy the first notebook from yesterday into a directory and put it under git version control.
+# Add a fourth scientist to the list, save and commit the change. Then delete the file.
+# Recover the file.
+# Recover the original file.
+

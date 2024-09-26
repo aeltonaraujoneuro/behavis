@@ -1,0 +1,49 @@
+
+# II. Sharing and Collaboration
+
+# Working with remote repos
+
+# create repo "andani_repo" on GIN
+# clone remote repo
+git clone git@gin.g-node.org:/gindemo/andani_repo
+cd andani_repo
+git remote -v  # list remotes
+ls
+cat README
+echo "Some info" >> README.md
+git add README.md
+git commit -m "Add some info"
+git status  # shows that we can push to the remote
+git push
+# go to the repo on GIN and verify that it has been updated
+
+
+# make changes to the same file locally and remote, fetch and try to merge
+# git will ask you to resolve the conflict first
+
+
+
+# pull request:
+
+# fork repo "twachtler/demo_data" to "gindemo/demo_data"
+# clone the fork
+git clone git@gin.g-node.org:/gindemo/demo_data.git
+cd demo_data
+
+git branch   # list branches
+git branch description   # create new branch
+git checkout description    # switch to branch
+# add description to README, add, commit
+git push -u origin description  # create branch on the upstream repo and push
+# go to original repo and create pull request
+# after it gets merged:
+git checkout master  # leave descripton branch
+git push -d origin description  # delete branch after merge
+git branch -d description  # delete local branch
+
+
+
+# Exercise:
+# Create repos on GIN and add a file with a question about git. Give each other access to the repos, fork the repos, write the answer into the file and create a pull request.
+
+
