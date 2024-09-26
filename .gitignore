@@ -1,2 +1,7 @@
 # Ignore files
-dfCuredData.csv
+*.csv
+*.nix
+*.ns2
+*.ns5
+*.nev
+*.zip
