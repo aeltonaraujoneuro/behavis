@@ -4,3 +4,6 @@
 - It also contains tutorials and information about the dataset** proposed to be used in the ANDA-NI school
 
 ** Visual Behavior Neuropixels dataset from Allen Brain Map
+'''
+pip install allensdk
+'''
